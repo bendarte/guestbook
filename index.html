@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guestbook</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Yrkeshögskolornas gästbok</h1>
+    <form action="/submit" method="post">
+      <label>Name:</label><input type="text" name="Name" /><br />
+      <label>Email:</label><input type="text" name="Email" /><br />
+      <label>Lärosäte:</label><input type="text" name="Lärosäte" /><br />
+      <label>Tel:</label><input type="text" name="Tel" /><br />
+      <label>Comment:</label><input type="text" name="Comment" /><br />
+      <!-- ... andra fält ... -->
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="guest">GÄSTER</div>
+    <script src="server.js"></script>
+  </body>
+</html>
